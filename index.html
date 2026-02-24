@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Meal Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <button class="icon-btn" aria-label="Go back">←</button>
+        <div>
+          <p class="eyebrow">Meal planner</p>
+          <h1>Planning my meals for the week</h1>
+        </div>
+        <button class="icon-btn" aria-label="Cart">🛒</button>
+      </header>
+
+      <section class="calendar-wrap" aria-label="Week overview">
+        <div class="week-grid">
+          <article class="day-column active-day">
+            <h3>Monday</h3>
+            <p>2 meals</p>
+            <div class="pill-group">
+              <span>Breakfast</span><span>Dinner</span>
+            </div>
+          </article>
+          <article class="day-column">
+            <h3>Tuesday</h3>
+            <p>2 meals</p>
+            <div class="pill-group">
+              <span>Breakfast</span><span>Lunch</span>
+            </div>
+          </article>
+          <article class="day-column">
+            <h3>Wednesday</h3>
+            <p>3 meals</p>
+            <div class="pill-group">
+              <span>Breakfast</span><span>Lunch</span><span>Dinner</span>
+            </div>
+          </article>
+          <article class="day-column">
+            <h3>Thursday</h3>
+            <p>2 meals</p>
+            <div class="pill-group">
+              <span>Lunch</span><span>Dinner</span>
+            </div>
+          </article>
+          <article class="day-column">
+            <h3>Friday</h3>
+            <p>2 meals</p>
+            <div class="pill-group">
+              <span>Lunch</span><span>Dinner</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Meals</h2>
+          <div class="chip-row" role="tablist" aria-label="Meal filters">
+            <button class="chip active">All</button>
+            <button class="chip">Breakfast</button>
+            <button class="chip">Lunch</button>
+            <button class="chip">Dinner</button>
+          </div>
+        </div>
+
+        <div class="cards-grid">
+          <article class="meal-card">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=500&q=80" alt="Colorful breakfast bowl" />
+            <div class="meal-content">
+              <h3>Cereal Bowl</h3>
+              <p>Fresh fruit, greek yogurt, toasted nuts</p>
+              <div class="meal-meta"><span>⏱ 10 min</span><span>🍽 1 serving</span></div>
+            </div>
+          </article>
+
+          <article class="meal-card">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80" alt="Salad" />
+            <div class="meal-content">
+              <h3>Salmon Rice & Veggies</h3>
+              <p>Protein-rich lunch with roasted vegetables</p>
+              <div class="meal-meta"><span>⏱ 30 min</span><span>🍽 2 servings</span></div>
+            </div>
+          </article>
+
+          <article class="meal-card">
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=500&q=80" alt="Chicken wraps" />
+            <div class="meal-content">
+              <h3>Chicken Wraps</h3>
+              <p>Crunchy greens, avocado, and light sauce</p>
+              <div class="meal-meta"><span>⏱ 20 min</span><span>🍽 2 servings</span></div>
+            </div>
+          </article>
+
+          <article class="meal-card">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=500&q=80" alt="Warm dinner bowl" />
+            <div class="meal-content">
+              <h3>Lentil Bowl</h3>
+              <p>Hearty dinner with herbs and roasted tomato</p>
+              <div class="meal-meta"><span>⏱ 25 min</span><span>🍽 2 servings</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <button class="cta">Generate Shopping List</button>
+    </main>
+  </body>
+</html>
